@@ -89,6 +89,11 @@ const config = {
         defaultMode: 'dark'
       },
     }),
+
+  scripts: [
+    '/botInfo.js',
+  ],
+
 };
 
 module.exports = config;
