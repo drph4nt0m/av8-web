@@ -41,12 +41,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/logo.svg',
       navbar: {
         title: `Av8`,
-        logo: {
-          alt: `Av8 logo`,
-          src: 'img/logo.png',
-        },
+        hideOnScroll: false,
+        // logo: {
+        //   alt: `Av8 logo`,
+        //   src: 'img/logo.svg',
+        // },
         items: [
           // Right
           {
@@ -59,7 +61,7 @@ const config = {
             to: av8Config.support,
             label: 'Support Server',
             position: 'right',
-            className: 'button nav-button'
+            className: 'button button--outline nav-button'
           },
         ],
       },
