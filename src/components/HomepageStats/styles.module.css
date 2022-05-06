@@ -1,4 +1,4 @@
-.features {
+.stats {
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -6,11 +6,11 @@
   background-color: white;
 }
 
-[data-theme='dark'] .features {
+[data-theme='dark'] .stats {
   background-color: #222225;
 }
 
-.featureSvg {
+.statSvg {
   height: 100px;
   width: 100px;
 }

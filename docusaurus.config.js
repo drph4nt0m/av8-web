@@ -90,9 +90,16 @@ const config = {
       },
     }),
 
-  scripts: [
-    '/botInfo.js',
-  ],
+  // scripts: [
+  //   {
+  //     src: '/botInfo.js',
+  //     async: true,
+  //     defer: true,
+  //   }
+  // ],
+  clientModules: [
+    require.resolve('./static/botInfo.js')
+  ]
 
 };
 

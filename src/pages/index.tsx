@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageStats from '@site/src/components/HomepageStats';
 const av8Config = require('../../av8.config');
 
 function HomepageHeader() {
@@ -36,7 +36,7 @@ export default function Home(): JSX.Element {
       description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <HomepageStats />
       </main>
     </Layout>
   );

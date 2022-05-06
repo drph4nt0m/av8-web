@@ -2,15 +2,17 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-type FeatureItem = {
+type StatsItem = {
+  id: string;
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   // description: JSX.Element;
 };
 
-const FeatureList: FeatureItem[] = [
+const StatsList: StatsItem[] = [
   {
-    title: '6000+ Discord servers',
+    id: 'numberOfGuilds',
+    title: 'Discord servers',
     Svg: require('@site/static/img/discord-server-icon.svg').default,
     // description: (
     //   <>
@@ -19,36 +21,38 @@ const FeatureList: FeatureItem[] = [
     // ),
   },
   {
-    title: '100000+ Users',
+    id: 'totalMembers',
+    title: 'Users',
     Svg: require('@site/static/img/users-icon.svg').default,
   },
   {
-    title: '279179+ Commands used',
+    id: 'totalCommandsUsed',
+    title: 'Commands used',
     Svg: require('@site/static/img/commands-icon.svg').default,
   },
 ];
 
-function Feature({title, Svg}: FeatureItem) {
+function Stat({id, title, Svg}: StatsItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img"/>
+        <Svg className={styles.statSvg} role="img"/>
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+          <h3><span id={id}>{0}</span>+ {title}</h3>
         {/*<p>{description}</p>*/}
       </div>
     </div>
   );
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export default function HomepageStats(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className={styles.stats}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {StatsList.map((props, idx) => (
+            <Stat key={idx} {...props} />
           ))}
         </div>
       </div>
