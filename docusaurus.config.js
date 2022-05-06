@@ -98,7 +98,7 @@ const config = {
   //   }
   // ],
   clientModules: [
-    require.resolve('./static/botInfo.js')
+    require.resolve('./clientModules/botInfo.js')
   ]
 
 };
