@@ -3,10 +3,10 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
-  background-color: white;
+  background-color: #ededed;
 }
 
-[data-theme='dark'] .stats {
+[data-theme="dark"] .stats {
   background-color: #222225;
 }
 

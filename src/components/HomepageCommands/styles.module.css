@@ -1,0 +1,93 @@
+.commands {
+  max-width: 95vw;
+  margin: 50px auto;
+}
+
+.commands table {
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.6em;
+  width: 90vw;
+  max-width: 700px;
+}
+
+.commands table th,
+.commands table td,
+.commands table tr {
+  border: none;
+}
+
+.commands table tr:not(:first-child) {
+  border-top: 1px solid #d9d9d9;
+}
+
+[data-theme="dark"] .commands table tr:not(:first-child) {
+  border-top: 1px solid #202020;
+}
+
+.commands table tr,
+.commands table td {
+  background-color: #ededed !important;
+}
+
+[data-theme="dark"] .commands table tr,
+[data-theme="dark"] .commands table td {
+  background-color: #292929 !important;
+}
+
+.commands table th {
+  display: none;
+}
+
+.commands table td {
+  display: block;
+  width: unset;
+}
+
+.commands table td:first-child {
+  padding-top: 0.5em;
+}
+
+.commands table td:last-child {
+  padding-bottom: 0.5em;
+}
+
+.commands table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 7em;
+  display: inline-block;
+}
+
+.commands table th,
+.commands table td {
+  text-align: left;
+  margin: 0.5em 1em;
+}
+
+@media (min-width: 800px) {
+  .commands table td:before {
+    display: none;
+  }
+
+  .commands table th,
+  .commands table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+    padding: 1em !important;
+  }
+  .commands table th:first-child,
+  .commands table td:first-child {
+    padding-left: 0;
+    width: 20%;
+  }
+  .commands table th:last-child,
+  .commands table td:last-child {
+    padding-right: 0;
+    width: 80%;
+  }
+}
+
+.commands code {
+  padding: 5px;
+}

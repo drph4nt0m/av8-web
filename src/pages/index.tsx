@@ -1,25 +1,27 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import Head from '@docusaurus/Head';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageStats from '@site/src/components/HomepageStats';
-const av8Config = require('../../av8.config');
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import Head from "@docusaurus/Head";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import styles from "./index.module.css";
+import HomepageStats from "@site/src/components/HomepageStats";
+import HomepageCommands from "@site/src/components/HomepageCommands";
+const av8Config = require("../../av8.config");
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--secondary', styles.heroBanner)}>
+    <header className={clsx("hero hero--secondary", styles.heroBanner)}>
       <div className="container">
-        <img src="img/logo.svg" className="hero__logo"/>
+        <img src="img/logo.svg" className="hero__logo" />
         {/*<h1 className="hero__title">{siteConfig.title}</h1>*/}
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to={av8Config.invite}>
+            to={av8Config.invite}
+          >
             Add to Discord
           </Link>
         </div>
@@ -29,14 +31,13 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={siteConfig.title}
-      description={siteConfig.tagline}>
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
         <HomepageStats />
+        <HomepageCommands />
       </main>
     </Layout>
   );
