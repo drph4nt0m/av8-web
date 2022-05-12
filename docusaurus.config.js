@@ -32,6 +32,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: "img/logo.svg",
+      announcementBar: {
+        id: "support_us",
+        content: `AvBot v4 has been deployed. <a target="_blank" href="${av8Config.invite}">Re-invite AvBot</a> if the bot's slash commands aren't working in your Discord server.`,
+        backgroundColor: "var(--ifm-color-primary-lightest)",
+        isCloseable: false,
+      },
       navbar: {
         title: `AvBot | Av8`,
         hideOnScroll: false,
