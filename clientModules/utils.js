@@ -57,7 +57,7 @@ if (ExecutionEnvironment.canUseDOM) {
         if (document.contains(doc)) {
           observer.disconnect();
           await sleep(1000);
-          doc.scrollIntoView({ behavior: "smooth", block: "center" });
+          doc.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }
     });

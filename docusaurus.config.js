@@ -78,7 +78,7 @@ const config = {
         defaultMode: "dark",
       },
     }),
-  clientModules: [require.resolve("./clientModules/botInfo.js")],
+  clientModules: [require.resolve("./clientModules/utils.js")],
 };
 
 module.exports = config;
