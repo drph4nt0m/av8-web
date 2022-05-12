@@ -73,7 +73,6 @@
   .commands table th,
   .commands table td {
     display: table-cell;
-    padding: 0.25em 0.5em;
     padding: 1em !important;
   }
   .commands table th:first-child,

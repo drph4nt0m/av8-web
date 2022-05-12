@@ -4,7 +4,6 @@
  * work well for content-centric websites.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* You can override the default Infima variables here. */
@@ -17,7 +16,6 @@
   --ifm-color-primary-lighter: #68adff;
   --ifm-color-primary-lightest: #97c7ff;
 
-  /*font-family: 'Anonymous Pro', monospace;*/
   font-family: "Poppins", sans-serif;
 
   scroll-behavior: smooth;
