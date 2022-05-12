@@ -15,6 +15,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+
   presets: [
     [
       "classic",
@@ -32,7 +33,7 @@ const config = {
     ({
       image: "img/logo.svg",
       navbar: {
-        title: `Av8`,
+        title: `AvBot | Av8`,
         hideOnScroll: false,
         items: [
           {

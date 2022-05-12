@@ -34,6 +34,35 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <Head>
+        <title>AvBot: Aviation enthusiast's friendly neighborhood bot</title>
+        <meta
+          property="keywords"
+          content={
+            "aviation, discord, bot, flight, simulation, online, metar, taf, station, atis, flight, ivao, vatsim, nats, zulu, time"
+          }
+        />
+        <meta
+          name="description"
+          content={
+            "Get METAR, TAF, ATIS, station information, IVAO and VATSIM's flight and controller information, zulu time, and much more."
+          }
+        />
+        <meta
+          property="og:title"
+          content={"AvBot: Aviation enthusiast's friendly neighborhood bot"}
+        />
+        <meta
+          property="og:description"
+          content={
+            "Get METAR, TAF, ATIS, station information, IVAO and VATSIM's flight and controller information, zulu time, and much more."
+          }
+        />
+        <meta
+          property="og:image"
+          content={"https://new.av8.dev/img/logo.svg"}
+        />
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageStats />

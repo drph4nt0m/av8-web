@@ -24,11 +24,13 @@ const CommandsList: CommandItem[] = [
   },
   {
     slash: "atis",
-    description: "Get the live ATIS (as text) for any airport",
+    description:
+      "Get the live ATIS (Automatic Terminal Information Service) for any airport as text",
   },
   {
     slash: "atis-voice",
-    description: "Get the live ATIS (as voice) for any airport",
+    description:
+      "Get the live ATIS (Automatic Terminal Information Service) for any airport as voice",
   },
   {
     slash: "flight",
