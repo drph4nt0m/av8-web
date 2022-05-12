@@ -47,13 +47,12 @@
 
 .nav-button {
   margin: 0 10px;
-  /*font-weight: bold;*/
-  /*font-size: 1.1em;*/
 }
 
 .nav-button,
 .nav-button:hover {
   color: unset;
+  padding: 10px;
 }
 
 .nav-button.button--primary {
@@ -71,4 +70,18 @@
 .hero__logo {
   width: 200px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 997px) {
+  .nav-button, .nav-button:hover {
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    background-color: #d9d9d9;
+    color: initial !important;
+  }
+
+  [data-theme="dark"] .nav-button {
+    background-color: #202020;
+  }
 }

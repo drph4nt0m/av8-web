@@ -53,12 +53,12 @@ const config = {
         style: "dark",
         links: [
           {
-            label: "GitHub",
-            to: av8Config.github,
+            label: "Support",
+            to: av8Config.donate,
           },
           {
-            label: "Support",
-            to: av8Config.support,
+            label: "GitHub",
+            to: av8Config.github,
           },
           {
             label: "Status",
