@@ -19,6 +19,11 @@ const CommandsList: CommandItem[] = [
       "Get the latest TAF (Terminal Aerodrome Forecast) for any airport",
   },
   {
+    slash: "notam",
+    description:
+      "Get the active and upcoming NOTAMs (Notice to Air Missions) for any airport",
+  },
+  {
     slash: "station",
     description: "Get the station information for any airport",
   },
