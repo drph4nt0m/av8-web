@@ -41,8 +41,8 @@ if (ExecutionEnvironment.canUseDOM) {
         console.error(error);
         const data = {
           numberOfGuilds: 6000,
-          totalMembers: 1000000,
-          totalCommandsUsed: 279707,
+          totalMembers: 600000,
+          totalCommandsUsed: 280000,
         };
         setStats(data);
       });
