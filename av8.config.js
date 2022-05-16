@@ -7,7 +7,7 @@ const av8Config = {
   support: "https://go.av8.dev/support",
   donate: "https://go.av8.dev/donate",
   status: "https://status.av8.dev",
-  github: "https://github.com/drph4nt0m/avbot-v3",
+  github: "https://github.com/drph4nt0m/avbot",
 };
 
 module.exports = av8Config;
