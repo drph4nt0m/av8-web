@@ -28,12 +28,12 @@ const CommandsList: CommandItem[] = [
     description: "Get the station information for any airport",
   },
   {
-    slash: "atis",
+    slash: "atis text",
     description:
       "Get the live ATIS (Automatic Terminal Information Service) for any airport as text",
   },
   {
-    slash: "atis-voice",
+    slash: "atis voice",
     description:
       "Get the live ATIS (Automatic Terminal Information Service) for any airport as voice",
   },
@@ -55,11 +55,11 @@ const CommandsList: CommandItem[] = [
       "Get the information for the latest active North Atlantic Tracks",
   },
   {
-    slash: "zulu",
+    slash: "time zulu",
     description: "Get the current zulu time",
   },
   {
-    slash: "time",
+    slash: "time convert",
     description:
       "Get the zulu to local or local to zulu time conversions for any airport",
   },

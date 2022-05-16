@@ -34,7 +34,7 @@ const config = {
       image: "img/logo.svg",
       announcementBar: {
         id: "avbot-update",
-        content: `🥳 AvBot v4 has been deployed. <a target="_blank" href="${av8Config.invite}">Re-invite AvBot</a> if the bot's slash commands aren't working in your Discord server. 🚀`,
+        content: `🥳 AvBot v4 has been deployed! <a target="_blank" href="${av8Config.invite}">Re-invite AvBot</a> if the bot's slash commands aren't working in your Discord server. 🚀`,
         backgroundColor: "var(--ifm-color-primary-lightest)",
         isCloseable: false,
       },

@@ -49,7 +49,7 @@ if (ExecutionEnvironment.canUseDOM) {
   }
 
   async function loadPage() {
-    // await fetchStats();
+    await fetchStats();
 
     const observer = new MutationObserver(async (mutations) => {
       if (window.location.hash) {
