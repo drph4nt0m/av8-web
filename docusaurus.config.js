@@ -71,6 +71,14 @@ const config = {
             label: "Status",
             to: av8Config.status,
           },
+          {
+            label: "Privacy Policy",
+            to: "/privacy-policy",
+          },
+          {
+            label: "Terms and Conditions",
+            to: "/terms-and-conditions",
+          },
         ],
         copyright: `© 2018-${new Date().getFullYear()} Av8 | Built with Docusaurus`,
       },
