@@ -1,4 +1,4 @@
-section {
+.sponsorSection {
   display: flex;
   justify-content: center;
   margin: 50px;
@@ -6,4 +6,6 @@ section {
 
 .sponsorCard {
   border: 0;
+  width: 600px;
+  background: none !important;
 }
