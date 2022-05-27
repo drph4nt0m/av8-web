@@ -7,6 +7,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageStats from "@site/src/components/HomepageStats";
 import HomepageCommands from "@site/src/components/HomepageCommands";
+import GitHubSponsorCard from "@site/src/components/GitHubSponsorCard";
 const av8Config = require("../../av8.config");
 
 function HomepageHeader() {
@@ -73,6 +74,7 @@ export default function Home(): JSX.Element {
       <main>
         <HomepageStats />
         <HomepageCommands />
+        <GitHubSponsorCard />
       </main>
     </Layout>
   );
