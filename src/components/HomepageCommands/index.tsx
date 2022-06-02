@@ -43,11 +43,15 @@ const CommandsList: CommandItem[] = [
   },
   {
     slash: "ivao",
-    description: "Get the information for a call sign on the IVAO network",
+    description: "Get the information for a flight or an ATC on the IVAO network",
   },
   {
     slash: "vatsim",
-    description: "Get the information for a call sign on the VATSIM network",
+    description: "Get the information for a flight or an ATC on the VATSIM network",
+  },
+  {
+    slash: "poscon",
+    description: "Get the information for a flight or an ATC on the POSCON network",
   },
   {
     slash: "nats",
